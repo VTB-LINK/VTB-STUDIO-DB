@@ -7,6 +7,11 @@ csv db repo for lite-web-studio(a-soul instance)
 - main: 修改变更版本管理，发布之前的测试用分支，外部修改 PR 请提交到这里
 - release: prod 环境用分支，不接受外部的 PR
 
+## Clean CDN
+请在更新对应分支后点击下方链接更新cdn信息来反应最新状态到录播站。
+- [Stag Sync](https://purge.jsdelivr.net/gh/chobitsnerv/ass-db@main)
+- [Prod Sync](https://purge.jsdelivr.net/gh/chobitsnerv/ass-db@release)
+
 ## CSV File Reference
 
 **注意**：各属性前后请勿留存空格
