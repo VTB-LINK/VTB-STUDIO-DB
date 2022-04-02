@@ -4,8 +4,8 @@ csv db repo for lite-web-studio(a-soul instance)
 
 ## Brach
 
-main: 修改变更版本管理，发布之前的测试用分支，外部修改 PR 请提交到这里
-release: prod 环境用分支，不接受外部的 PR
+- main: 修改变更版本管理，发布之前的测试用分支，外部修改 PR 请提交到这里
+- release: prod 环境用分支，不接受外部的 PR
 
 ## CSV File Reference
 
