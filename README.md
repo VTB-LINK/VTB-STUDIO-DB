@@ -8,9 +8,15 @@ csv db repo for lite-web-studio(a-soul instance)
 - release: prod 环境用分支，不接受外部的 PR
 
 ## Clean CDN
-请在更新对应分支后点击下方链接更新cdn信息来反应最新状态到录播站。
-- [Stag Sync](https://purge.jsdelivr.net/gh/chobitsnerv/ass-db@main)
+请在更新对应分支后点击下方链接更新cdn信息来反应最新状态到录播站。如果没有更新的话，请点击对应的文件对象单独更新。
+- [Stag ALL Sync](https://purge.jsdelivr.net/gh/chobitsnerv/ass-db@main)
+  - [Stag DB Sync](https://purge.jsdelivr.net/gh/chobitsnerv/ass-db@main/song_database.csv)
+  - [Stag Playlist Sync](https://purge.jsdelivr.net/gh/chobitsnerv/ass-db@main/playlist_database.csv)
+  - [Stag LRC Sync](https://purge.jsdelivr.net/gh/chobitsnerv/ass-db@main/lrc_database.csv)
 - [Prod Sync](https://purge.jsdelivr.net/gh/chobitsnerv/ass-db@release)
+  - [Prod DB Sync](https://purge.jsdelivr.net/gh/chobitsnerv/ass-db@release/song_database.csv)
+  - [Prod Playlist Sync](https://purge.jsdelivr.net/gh/chobitsnerv/ass-db@release/playlist_database.csv)
+  - [Prod LRC Sync](https://purge.jsdelivr.net/gh/chobitsnerv/ass-db@release/lrc_database.csv)
 
 ## CSV File Reference
 
