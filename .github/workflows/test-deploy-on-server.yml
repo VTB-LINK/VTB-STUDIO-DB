@@ -6,7 +6,7 @@ name: TEST Deploy on test server
 on:
   push:
     branches:
-      - main
+      - release
   workflow_dispatch:
 
 jobs:
