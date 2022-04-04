@@ -9,6 +9,10 @@ on:
   #   types: [opened, synchronize, reopened, closed]
   #   branches:
   #     - a-soul
+  pull_request:
+    types: [closed]
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:

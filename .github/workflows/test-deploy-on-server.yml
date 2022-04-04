@@ -4,6 +4,9 @@ name: TEST Deploy on test server
 
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
