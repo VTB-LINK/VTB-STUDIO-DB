@@ -4,10 +4,14 @@ name: TEST Deploy on test server
 
 
 on:
-  push:
-    branches:
-      - release
-  workflow_dispatch:
+#   push:
+#     branches:
+#       - release
+    pull_request:
+      types: [closed]
+      branches:
+        - main
+    workflow_dispatch:
 
 jobs:
   build:
