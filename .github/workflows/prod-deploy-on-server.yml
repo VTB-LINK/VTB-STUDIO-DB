@@ -5,12 +5,12 @@ name: PROD Deploy on test server
 
 on:
   push:
-    # branches:
-    #   - release
-      pull_request:
-        types: [closed]
-        branches:
-          - main
+    branches:
+      - release
+#       pull_request:
+#         types: [closed]
+#         branches:
+#           - main
   workflow_dispatch:
 
 jobs:
