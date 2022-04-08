@@ -6,7 +6,11 @@ name: TEST Deploy on test server
 on:
   push:
     branches:
-      - release
+      - main
+#     pull_request:
+#       types: [closed]
+#       branches:
+#         - main
   workflow_dispatch:
 
 jobs:
