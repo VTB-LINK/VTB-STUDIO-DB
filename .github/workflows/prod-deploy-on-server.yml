@@ -1,16 +1,16 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-name: TEST Deploy on test server
+name: PROD Deploy on test server
 
 
 on:
-  push:
+#   push:
+#     branches:
+#       - release
+  pull_request:
+    types: [closed]
     branches:
-      - main
-#     pull_request:
-#       types: [closed]
-#       branches:
-#         - main
+      - release
   workflow_dispatch:
 
 jobs:
@@ -39,6 +39,7 @@ jobs:
         known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
     - name: Adding Known Hosts
       run: ssh-keyscan -H ${{ secrets.HK_CMI_SSH_HOST_IP }} >> ~/.ssh/known_hosts
-    - name: Deploy with rsync
-      run: rsync -avz ./ ${{ secrets.SSH_USER }}@${{ secrets.HK_CMI_SSH_HOST_IP }}:/www/wwwroot/csv-db.music.a-soul.fans/
+    - run: rsync -avz ./ ${{ secrets.SSH_USER }}@${{ secrets.HK_CMI_SSH_HOST_IP }}:/www/wwwroot/csv-db.studio.a-soul.fans/
+    - run: rsync -avz ./ ${{ secrets.SSH_USER }}@${{ secrets.HK_CMI_SSH_HOST_IP }}:/www/wwwroot/cn.csv-db.studio.asf.ink/
+
 
