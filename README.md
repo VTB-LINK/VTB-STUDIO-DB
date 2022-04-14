@@ -4,8 +4,8 @@ csv db repo for lite-web-studio(a-soul instance)
 
 ## Brach
 
-- main: 修改变更版本管理，发布之前的测试用分支，外部修改 PR 请提交到这里
-- release: prod 环境用分支，不接受外部的 PR
+- main: 修改变更版本管理，发布之前的测试用分支，外部修改 Pull Request 请提交到这里
+- release: prod 环境用分支，不接受外部的 Pull Request
 
 ## Clean CDN
 请在更新对应分支后点击下方链接更新cdn信息来反应最新状态到录播站。如果没有更新的话，请点击对应的文件对象单独更新。
