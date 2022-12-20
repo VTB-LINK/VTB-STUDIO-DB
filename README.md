@@ -4,8 +4,8 @@ csv db repo for lite-web-studio(a-soul instance)
 
 ## Brach
 
-- main: 修改变更版本管理，发布之前的测试用分支，外部修改 PR 请提交到这里
-- release: prod 环境用分支，不接受外部的 PR
+- main: 修改变更版本管理，发布之前的测试用分支，外部修改 Pull Request 请提交到这里
+- release: prod 环境用分支，不接受外部的 Pull Request
 
 ## Clean CDN
 请在更新对应分支后点击下方链接更新cdn信息来反应最新状态到录播站。如果没有更新的话，请点击对应的文件对象单独更新。
@@ -50,7 +50,7 @@ csv db repo for lite-web-studio(a-soul instance)
 
 为方便音源入库，本文档简要说明文件名命名规范
 
-请切片 man 在完成切片后参照 csv 命名，如果 csv 有误，请在切片组内反馈。
+请切片 Man 在完成切片后参照 csv 命名，如果 csv 有误，请在切片组内反馈。
 
 - 文件名格式为：**时间+空格+参与者代号+空格+歌曲名称【版本号+空格+版本备注】**
 
