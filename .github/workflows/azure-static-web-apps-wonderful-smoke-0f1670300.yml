@@ -1,6 +1,7 @@
 name: Azure Static Web Apps CI/CD
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - release
@@ -8,8 +9,7 @@ on:
     types: [synchronize, closed]
     branches:
       - release
-  workflow_dispatch:
-
+      
 jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
