@@ -5,9 +5,10 @@ on:
     branches:
       - release
   pull_request:
-    types: [opened, synchronize, reopened, closed]
+    types: [synchronize, closed]
     branches:
       - release
+  workflow_dispatch:
 
 jobs:
   build_and_deploy_job:
