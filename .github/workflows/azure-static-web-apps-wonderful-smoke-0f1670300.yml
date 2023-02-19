@@ -5,10 +5,10 @@ on:
   push:
     branches:
       - release
-  pull_request:
-    types: [synchronize, closed]
-    branches:
-      - release
+#   pull_request:
+#     types: [synchronize, closed]
+#     branches:
+#       - release
       
 jobs:
   build_and_deploy_job:
